@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #142133;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #E0E1DD;
+}
+
+header{
+    background-color: #0D1B2A;
+}
+
+footer{
+    background-color: #0D1B2A;
+}
+
+header img{
+    width: 150px;
+    height: 80px;
+    float: left;
+    padding: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #E0E1DD;
+    padding: 10px 30px;
+}
+
+footer img{
+    width: 150px;
+    height: 80px;
+    float: left;
+    padding: 10px;
+}
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu1{
+    display: inline-block;
+    margin: 30px;
+}
+
+.menu2{
+    display: inline-block;
+    margin: 30px;
+    margin-left: 70px;
+}
+
+.menu3{
+    display: inline-block;
+    margin: 30px;
+    margin-left: 150px;
+}
+
+.principal-movie{
+    min-height: 400px;
+    width: auto;
+    height: 400px;
+    background-image: url(../multimedia/johnwick4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.articles{
+    margin: 100px 50px;
+}
+
+.images{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+
