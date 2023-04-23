@@ -5,80 +5,139 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #142133;
+    background-color: #001D3D;
     font-family: 'Be Vietnam Pro', sans-serif;
     color: #E0E1DD;
 }
 
+a:hover{
+    color: #FFD60A !important;
+}
+
 header{
-    background-color: #0D1B2A;
+    background-color: #000814;
+}
+
+nav{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 footer{
-    background-color: #0D1B2A;
+    background-color: #000814;
 }
 
 header img{
     width: 150px;
     height: 80px;
-    float: left;
-    padding: 10px;
 }
 
-nav a{
-    text-decoration: none;
-    color: #E0E1DD;
-    padding: 10px 30px;
-}
 
 footer img{
     width: 150px;
     height: 80px;
-    float: left;
-    padding: 10px;
 }
 
-
-.container{
-    width: 90%;
-    margin: 0 auto;
+.bg-item{
+    background-color: #001D3D;
 }
 
-.menu1{
+.d-item{
+    height: 500px;
+}
+
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.card{
+    width: 100%;
+    height: auto;
+}
+
+.card-body{
+    font-size: 80%;
+}
+
+.articulo{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.articulo h3{
+    padding: 30px;
+    font-weight: 800;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #000814;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #E0E1DD;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #E0E1DD;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
     display: inline-block;
-    margin: 30px;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #E0E1DD;
+    margin-right: 10px;
+    background-color: #001D3D;
+    text-align: center;
+    transition: all 300ms ease;
 }
-
-.menu2{
-    display: inline-block;
-    margin: 30px;
-    margin-left: 70px;
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #FFD60A;
 }
-
-.menu3{
-    display: inline-block;
-    margin: 30px;
-    margin-left: 150px;
+.pie-pagina .grupo-2{
+    background-color: #000814;
+    padding: 15px 10px;
+    text-align: center;
+    color: #E0E1DD;
 }
-
-.principal-movie{
-    min-height: 400px;
-    width: auto;
-    height: 400px;
-    background-image: url(../multimedia/johnwick4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
 }
-
-.articles{
-    margin: 100px 50px;
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
 }
-
-.images{
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-}
-
 
