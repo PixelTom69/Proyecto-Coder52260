@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: map-get($colores, uno);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: map-get($colores, cuatro);
+}
+
+a{
+    color: map-get($colores, cuatro);
+    &:hover{
+        color: map-get($colores, cinco) !important;
+    }
+}
