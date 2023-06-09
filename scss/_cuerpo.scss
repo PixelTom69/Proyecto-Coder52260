@@ -1,5 +1,6 @@
 .cabeza{
     background-color: map-get($colores, dos);
+    box-shadow: 0 0 10px #FFD60A;
     .navbar{
         margin-left: 20px;
         margin-right: 20px;
@@ -13,9 +14,11 @@
 }
 
 main{
+    box-shadow: 0 0 10px #FFD60A;
     .carousel-item{
-        height: 515px;
+        height: auto;
         img{
+            max-height: 515px;
             width: 100%;
             height: 100%;
             filter: brightness(0.5);
@@ -68,7 +71,7 @@ section{
             }
         }
         .card{
-            background-color: map-get($colores, tres);
+            background-color: map-get($colores, uno);
             color: map-get($colores, cuatro);
             border: none;
             .card-body{
@@ -76,12 +79,12 @@ section{
                 height: 180px;
             }
             .btn{
-                background-color: map-get($colores, dos);
+                background-color: map-get($colores, tres);
                 color: map-get($colores, cuatro);
             }
         }
         .mov-ser{
-            background-color: map-get($colores, uno);
+            background-color: map-get($colores, dos);
             .image-effect{
                 border-radius: 5%;
                 &:hover{
@@ -91,7 +94,7 @@ section{
         }
     }
     .login{
-        background-color: map-get($colores, tres);
+        background-color: map-get($colores, uno);
         color: map-get($colores, cuatro);
         border-radius: 2%;
         .formulario{
@@ -100,10 +103,17 @@ section{
             }
         }
     }
+    .list{
+        p{
+            font-size: larger;
+            font-weight: 400;
+        }
+    }
 }
 
 .pie-pagina{
     background-color: map-get($colores, dos);
+    box-shadow: 0 0 10px #FFD60A;
     width: 100%;
     .grupo-1{
         width: 100%;
