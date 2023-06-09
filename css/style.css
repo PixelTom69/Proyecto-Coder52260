@@ -17,9 +17,18 @@ a:hover {
   color: #FFD60A !important;
 }
 
-nav {
+.cabeza {
+  background-color: #000814;
+}
+.cabeza .navbar {
   margin-left: 20px;
   margin-right: 20px;
+}
+.cabeza .navbar .hambur {
+  background-color: #FFD60A;
+}
+.cabeza .navbar .nav-link {
+  color: #E0E1DD;
 }
 
 main .carousel-item {
@@ -31,15 +40,37 @@ main .carousel-item img {
   filter: brightness(0.5);
 }
 
-section {
+.presentation .glow-effect {
+  color: #E0E1DD;
+  text-shadow: 0 0 5px #E0E1DD, 0 0 10px #E0E1DD, 0 0 15px #E0E1DD, 0 0 20px #FFD60A, 0 0 30px #FFD60A, 0 0 40px #FFD60A, 0 0 50px #FFD60A;
+  animation: glow 4s infinite;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #E0E1DD, 0 0 10px #E0E1DD, 0 0 15px #E0E1DD, 0 0 20px #FFD60A, 0 0 30px #FFD60A, 0 0 40px #FFD60A, 0 0 50px #FFD60A;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 5px #E0E1DD, 0 0 10px #E0E1DD, 0 0 15px #E0E1DD, 0 0 20px #FFD60A, 0 0 30px #FFD60A, 0 0 40px #FFD60A, 0 0 50px #FFD60A;
+  }
+}
+
+section .articulo {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 50px;
 }
-section .articulo h3 {
+section .articulo h1 {
   display: inline-block;
   padding: 30px;
   font-weight: 600;
+  margin: 10px;
+}
+section .articulo h2 {
+  padding: 30px;
+  font-weight: 400;
   margin: 10px;
 }
 section .articulo ul {
@@ -49,19 +80,38 @@ section .articulo ul li a {
   color: #E0E1DD;
 }
 section .articulo .card {
+  background-color: #003566;
+  color: #E0E1DD;
   border: none;
 }
 section .articulo .card .card-body {
   font-size: 80%;
+  height: 180px;
 }
-section .articulo .card .image-effect {
-  border-radius: 10%;
+section .articulo .card .btn {
+  background-color: #000814;
+  color: #E0E1DD;
 }
-section .articulo .card .image-effect:hover {
+section .articulo .mov-ser {
+  background-color: #001D3D;
+}
+section .articulo .mov-ser .image-effect {
+  border-radius: 5%;
+}
+section .articulo .mov-ser .image-effect:hover {
   transform: scale(1.1);
+}
+section .login {
+  background-color: #003566;
+  color: #E0E1DD;
+  border-radius: 2%;
+}
+section .login .formulario .btn {
+  background-color: #FFD60A;
 }
 
 .pie-pagina {
+  background-color: #000814;
   width: 100%;
 }
 .pie-pagina .grupo-1 {
@@ -83,7 +133,7 @@ section .articulo .card .image-effect:hover {
 .pie-pagina .grupo-1 .box figure img {
   width: 250px;
 }
-.pie-pagina .grupo-1 .box h2 {
+.pie-pagina .grupo-1 .box h3 {
   margin-bottom: 25px;
   font-size: 20px;
 }

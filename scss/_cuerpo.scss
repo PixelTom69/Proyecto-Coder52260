@@ -1,3 +1,17 @@
+.cabeza{
+    background-color: map-get($colores, dos);
+    .navbar{
+        margin-left: 20px;
+        margin-right: 20px;
+        .hambur{
+            background-color: map-get($colores, cinco);
+        }
+        .nav-link{
+            color: map-get($colores, cuatro);
+        }
+    }
+}
+
 main{
     .carousel-item{
         height: 515px;
@@ -9,15 +23,40 @@ main{
     }
 }
 
+.presentation{
+    .glow-effect {
+        color: #E0E1DD;
+        text-shadow: 0 0 5px #E0E1DD, 0 0 10px #E0E1DD, 0 0 15px #E0E1DD, 0 0 20px #FFD60A, 0 0 30px #FFD60A, 0 0 40px #FFD60A, 0 0 50px #FFD60A;
+        animation: glow 4s infinite;
+    }
+      
+    @keyframes glow {
+        0% {
+          text-shadow: 0 0 5px #E0E1DD, 0 0 10px #E0E1DD, 0 0 15px #E0E1DD, 0 0 20px #FFD60A, 0 0 30px #FFD60A, 0 0 40px #FFD60A, 0 0 50px #FFD60A;
+        }
+        50% {
+          text-shadow: none;
+        }
+        100% {
+          text-shadow: 0 0 5px #E0E1DD, 0 0 10px #E0E1DD, 0 0 15px #E0E1DD, 0 0 20px #FFD60A, 0 0 30px #FFD60A, 0 0 40px #FFD60A, 0 0 50px #FFD60A;
+        }
+    }
+}
+
 section{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;
     .articulo{
-        h3{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        h1{
             display: inline-block;
             padding: 30px;
             font-weight: 600;
+            margin: 10px;
+        }
+        h2{
+            padding: 30px;
+            font-weight: 400;
             margin: 10px;
         }
         ul{
@@ -29,16 +68,99 @@ section{
             }
         }
         .card{
+            background-color: map-get($colores, tres);
+            color: map-get($colores, cuatro);
             border: none;
             .card-body{
                 font-size: 80%;
+                height: 180px;
             }
+            .btn{
+                background-color: map-get($colores, dos);
+                color: map-get($colores, cuatro);
+            }
+        }
+        .mov-ser{
+            background-color: map-get($colores, uno);
             .image-effect{
-                border-radius: 10%;
+                border-radius: 5%;
                 &:hover{
                     transform: scale(1.1);
                 }
             }
         }
+    }
+    .login{
+        background-color: map-get($colores, tres);
+        color: map-get($colores, cuatro);
+        border-radius: 2%;
+        .formulario{
+            .btn{
+                background-color: map-get($colores, cinco);
+            }
+        }
+    }
+}
+
+.pie-pagina{
+    background-color: map-get($colores, dos);
+    width: 100%;
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:50px;
+        padding: 45px 0px;
+        .box{
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 250px;
+                }
+            }
+            h3{
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        .red-social{
+            a{
+                border-radius: 50%;
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                margin-right: 10px;
+                background-color: map-get($colores, uno);
+                text-align: center;
+                transition: all 300ms ease;
+            }
+        }
+     }
+    .grupo-2{
+        padding: 15px 10px;
+        text-align: center;
+        small{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
     }
 }
